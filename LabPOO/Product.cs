@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace LabPOO
 {
-    class Product
+    public interface ISerializable
     {
+
+    }
+    public class Product
+    {
+        
         private string name;
         private int stock;
         private int price; //Price for one unit of the product
@@ -31,6 +36,7 @@ namespace LabPOO
             }
             return false;
         }
+       
 
         public string Name { get => name; }
         public int Stock { get => stock; }
